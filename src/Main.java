@@ -6,16 +6,14 @@ public class Main {
         int a = 0;
         int m;
 
-        if (a > 0){
+        if (a > 0)
             m = 1;
-            for (int n = 1; n < a; n++)
-                m *= 3;
-
-
-        }
-        else {
+        else
             m = 0;
-        }
+
+        for (int n = 1; n < a; n++)
+            m *= 3;
+
 
         System.out.println(3 * m);
 
@@ -23,19 +21,16 @@ public class Main {
 
         //2
 
-        int b = -1;
-        int x = 1;
+        int b = -2;
+        int x;
 
-        if(b >= 0){
-            for (int c = 0; c != a; c++)
-                x *= b;
-        }
-        else{
-            for (int c = 0; c != a; c--){
-                x *= b;
-            }
+        if(a > 0)
+            x = 1;
+        else
+            x = 0;
 
-        }
+        for (int c = 1; c < a; c++)
+            x *= b;
 
         System.out.println(b * x);
     }
